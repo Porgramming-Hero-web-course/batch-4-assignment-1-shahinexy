@@ -5,4 +5,4 @@ const sumArray = (number: number[]): number =>{
     return number.reduce((num, prev) => num + prev, 0)
 }
 
-console.log(sumArray([5,5,10]));
+console.log(sumArray([1, 2, 3, 4, 5]));
