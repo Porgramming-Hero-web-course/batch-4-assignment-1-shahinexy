@@ -6,10 +6,10 @@ A type guard in TypeScript is a runtime check that narrows the type of a variabl
 ## Why are Type Guards Necessary?
 Type guards are necessary in TypeScript because they help narrow the type of a variable at runtime, ensuring that type-specific operations can be performed safely. Type guards provide a way to clarify which type a variable holds at a specific point in the code.
 
-- 1. Type Safety: TypeScript's static typing helps identify issues at compile time, but some type checks need to be performed at runtime due to dynamic values like user input or API responses.
-- 2. Code Clarity: Explicit type checks make the intent of the code clear and reduce ambiguity.
-- 3. Avoiding Runtime Errors: Type guards ensure that operations on variables are only applied when they match the expected type, preventing crashes.
-- 4. Improved IntelliSense: Narrowed types provide better IDE support with auto-completion and error checking.
+- Type Safety: TypeScript's static typing helps identify issues at compile time, but some type checks need to be performed at runtime due to dynamic values like user input or API responses.
+- Code Clarity: Explicit type checks make the intent of the code clear and reduce ambiguity.
+- Avoiding Runtime Errors: Type guards ensure that operations on variables are only applied when they match the expected type, preventing crashes.
+- Improved IntelliSense: Narrowed types provide better IDE support with auto-completion and error checking.
 
 ## Types of Type Guards in TypeScript
 There are several types of type guards, each serving a different purpose based on the kind of checks you want to perform. Here's an overview of the most common types of type guards and their use cases:
