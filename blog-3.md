@@ -18,6 +18,7 @@ There are several types of type guards, each serving a different purpose based o
 The `typeof` operator is commonly used to check the type of primitive values, like `string`, `number`, `boolean`, etc. It can be used to narrow down types in union types and refine the type of a variable.
 
 ###### Use Case:
+```typescript
 function printLength(value: string | number) {
     if (typeof value === "string") {
         console.log(value.length);  
@@ -26,11 +27,13 @@ function printLength(value: string | number) {
         console.log(value.toFixed(2));  
     }
 }
+` ``` `
 
 #### 2. `instanceof` Type Guard
 The `instanceof` operator is used to check if an object is an instance of a specific class or a subclass. It helps narrow down the type when dealing with object-oriented programming (OOP) or custom types.
 
 ###### Use Case:
+```typescript
 class Animal {
     move() { console.log("Moving..."); }
 }
@@ -46,11 +49,13 @@ function handleAnimal(animal: Animal) {
         animal.move();  
     }
 }
+` ``` `
 
 #### 3. `in` Operator Type Guard
 The `in` operator checks if a property exists on an object. It can be used to check whether a specific property exists on an object and, based on that, narrow down the type of the object.
 
 ###### Use Case:
+```typescript
 interface Circle {
     radius: number;
     kind: "circle";
@@ -70,11 +75,12 @@ function getArea(shape: Shape) {
         console.log(shape.sideLength * shape.sideLength);
     }
 }
-
+` ``` `
 #### 4. Custom Type Guard Functions
 A custom type guard is a user-defined function that helps TypeScript narrow down types using the `is` keyword. This method is particularly useful for more complex type checks that cannot be handled by `typeof`, `instanceof`, or `in`.
 
 ###### Use Case:
+```typescript
 interface Dog {
     bark: () => void;
 }
@@ -96,3 +102,4 @@ function handleAnimal(animal: Animal) {
         animal.meow();  
     }
 }
+` ``` `
